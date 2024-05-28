@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>My First Page</title>
+</head>
+<style>
+    textarea {
+      resize: none;
+    }
+    </style>
+<body bgcolor="yellow">
+
+    <nav>
+  
+        <input type="button" value="home" style="background-color: blueviolet;"> |
+        <input type="button" value="About us" style="background-color:cyan;"> |
+        <input type="button" value="Contact us" style="background-color: hotpink;"> |
+        <input type="button" value="Help" style="background-color: lime;"> |
+      </nav>
+
+    <strong>This is a</strong>
+    <em>page about my self</em>
+    <h1>My First Page</h1>
+    <ol>
+        <li>Rahul</li>
+        <li>Rohit</li>
+        <li>Bellary</li>
+    </ol>
+    <ul>
+        <li>Mango</li>
+        <li>Apple</li>
+        <li>Banana</li>
+    </ul>
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+        <label for="Address">Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="50">
+            
+            </textarea>
+      
+
+      <h3>Size</h3>
+      <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">Large</label>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">Medium</label>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">Small</label><br>
+
+        <h3>Size</h3>
+        <input type="checkbox">
+        <label for="vehicle1">Large</label>
+        <input type="checkbox" >
+        <label for="vehicle2">Medium</label>
+        <input type="checkbox" >
+        <label for="vehicle3">Small</label><br><br>
+
+        <button type="button">Click Me!</button>
+        <button type="button">Go</button>
+        <input type="submit">
+        <input type="reset"><br><br>
+
+        <table border="10">
+            <tr>
+              <td>One</td>
+              <td>Two</td>            
+            </tr>
+            <tr>
+              <td>Three</td>
+              <td>Four</td>
+            </tr>
+          </table>
+
+          <table border="10">
+            <tr>
+              <td>One</td>
+              <td>Two</td>            
+            </tr>
+            <tr>
+              <td>Three</td>
+              <td><table>
+                <tr>
+                  <td>One</td>
+                  <td>Two</td>            
+                </tr>
+                <tr>
+                  <td>Three</td>
+                  <td>Four</td>
+                </tr>
+              </table></td>
+            </tr>
+          </table>
+
+        <ul>This is about myself</ul>  
+        <a href="https://www.google.com">This is google</a>
+
+    </form><br>     
+
+    <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+    </iframe><br>
+
+    <svg width="400" height="400" border=2px solid #000000;>
+        <circle cx="100" cy="100" r="70"
+        stroke="red" stroke-width="4" fill="orange" />
+      Sorry, your browser does not support inline SVG.
+      </svg>
+      
+      <svg width="400" height="180">
+        <rect x="50" y="20" rx="50" ry="5   0" width="150" height="150"
+        style="fill:red;stroke:black;stroke-width:5;opacity:0.5" />
+      </svg>
+      
+      <svg width="300" height="200">
+        <polygon points="100,10 40,198 190,78 10,78 160,198"
+        style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;" />
+      </svg>
+
+      <form>
+        Enter Range <input type="range" name="range1" min=0 max=10><br>
+
+		Enter Number<input type="number" name="marks" min=10 max=50><br>
+		Enter Email :<input type="email" name="mymail"><br>
+
+		select your date of birth:<input type="date" name="DOB"><br>
+		Select a file <input type="file" name="myfile"><br>
+
+		Select your fav color:<INPUT TYPE="color" NAME="color1"></INPUT> <br>
+
+		<input type="button" name="b1" value="Home" onclick="window.location.href = 'my.html';"></input>
+		
+		<input type="submit" name="b1"></input>
+        <input type="reset" name="b1"></input>     
+
+        <figure>
+            <img src="download.jpg" alt="PowPetrol" width="200px" height="200px">
+            <figcaption>Fig.1 - Pow Petrol Puppy</figcaption>
+          </figure>
+      </form>
+       
+      <div id="googleMap" style="width:100%;height:400px;"></div>
+
+      <script>
+      function myMap() {
+      var mapProp= {
+        center:new google.maps.LatLng(51.508742,-0.120850),
+        zoom:5,
+      };
+      var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+      }
+      </script>
+      
+      <!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>-->
+         
+</body> 
+</html>

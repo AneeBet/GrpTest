@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Page with Lists and Form</title>
+    <style>
+           body {
+            background-color: yellow; /* Set body background color to yellow */
+        }
+
+        table, th, td {
+            border: 4px solid black; /* Thick border */
+            border-collapse: collapse; /* Collapse borders */
+            padding: 8px; /* Add padding for better appearance */
+        }
+
+        table.outer, table.inner, th, td {
+            border: 4px solid black; /* Thick border */
+            border-collapse: collapse; /* Collapse borders */
+            padding: 8px; /* Add padding for better appearance */
+        }
+        table.inner {
+            border: none; /* Remove border from inner table */
+        }
+
+        u {
+            color: orange; /* Set text color to orange */
+        }
+
+        table.outer th {
+            background-color: green; /* Set background color of outer table header to green */
+            color: white; /* Set text color to white for better contrast */
+        }
+        table.outer th:nth-child(2) {
+            background-color: red; /* Set background color of second outer table header to red */
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Page with Lists and Form</h1>
+    <nav>
+  
+        <input type="button" value="home" style="background-color: blueviolet;"> |
+        <input type="button" value="About us" style="background-color:cyan;"> |
+        <input type="button" value="Contact us" style="background-color: hotpink;"> |
+        <input type="button" value="Help" style="background-color: lime;"> |
+    <p>This is an <em>emphasized</em> text.</p>
+    </nav>
+    <!-- Strong and Emphasis Together -->
+    <p>This is <strong>very <em>important</em></strong> text.</p>
+    
+    <!-- Ordered List -->
+    <h2>Ordered List</h2>
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+    
+    <!-- Unordered List -->
+    <h2>Unordered List</h2>
+    <ul>
+        <li>Item A</li>
+        <li>Item B</li>
+        <li>Item C</li>
+    </ul>
+    
+    <!-- Form -->
+    <h2>Form</h2>
+    <form action="/submit-form" method="post">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required><br><br>
+        
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required><br><br>
+        
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+        
+        <label>Size:</label><br>
+        <input type="radio" id="large" name="size" value="large">
+        <label for="large">Large</label><br>
+        
+        <input type="radio" id="medium" name="size" value="medium">
+        <label for="medium">Medium</label><br>
+        
+        <input type="radio" id="small" name="size" value="small">
+        <label for="small">Small</label><br><br>
+        
+        <label>Check Button Size:</label><br>
+        <input type="checkbox" id="largeCheck" name="checkSize" value="large">
+        <label for="largeCheck">Large</label><br>
+        
+        <input type="checkbox" id="mediumCheck" name="checkSize" value="medium">
+        <label for="mediumCheck">Medium</label><br>
+        
+        <input type="checkbox" id="smallCheck" name="checkSize" value="small">
+        <label for="smallCheck">Small</label><br><br>
+        
+        <input type="submit" value="Submit">
+        <input type="submit" value="click me">
+        <input type="submit" value="submit">
+        <input type="submit" value="Reset">
+        <br>
+        Enter Range <input type="range" name="range1" min=0 max=10><br>
+
+		Enter Number<input type="number" name="marks" min=10 max=50><br>
+		Enter Email :<input type="email" name="mymail"><br>
+
+		select your date of birth:<input type="date" name="DOB"><br>
+		Select a file <input type="file" name="myfile"><br>
+
+		Select your fav color:<INPUT TYPE="color" NAME="color1"></INPUT> <br>
+
+		<input type="button" name="b1" value="Home" onclick="window.location.href = 'my.html';"></input>
+		
+		<input type="submit" name="b1"></input>
+        <input type="reset" name="b1"></input>     
+
+    </form>
+
+    <form>
+        <label for="fruit">Select your favorite fruit:</label>
+        <select id="fruit" name="fruit">
+            <option value="mango">Mango</option>
+            <option value="apple">Apple</option>
+            <option value="kiwi">Kiwi</option>
+        </select>
+    </form>
+
+    <table>
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <th>Header 3</th>
+        </tr>
+        <tr>
+            <td>Data 1</td>
+            <td>Data 2</td>
+            <td>Data 3</td>
+        </tr>
+        <tr>
+            <td>Data 4</td>
+            <td>Data 5</td>
+            <td>Data 6</td>
+        </tr>
+    </table>
+
+    <table class="outer">
+        <tr>
+            <th>Outer Header 1</th>
+            <th>Outer Header 2</th>
+            <th>Outer Header 3</th>
+        </tr>
+        <tr>
+            <td>
+                <!-- Nested Table -->
+                <table class="inner">
+                    <tr>
+                        <th>Inner Header 1</th>
+                        <th>Inner Header 2</th>
+                    </tr>
+                    <tr>
+                        <td>Inner Data 1</td>
+                        <td>Inner Data 2</td>
+                    </tr>
+                    <tr>
+                        <td>Inner Data 3</td>
+                        <td>Inner Data 4</td>
+                    </tr>
+                </table>
+            </td>
+            <td>Data 1</td>
+            <td>Data 2</td>
+        </tr>
+        <tr>
+            <td>Data 3</td>
+            <td>Data 4</td>
+            <td>Data 5</td>
+        </tr>
+    </table>
+
+    <p><u>this is about myself</u></p>
+
+    <p>Visit <a href="https://www.google.com" target="_blank">Google</a>.</p>
+    <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+
+
+    <article>
+        <h2>Google Chrome</h2>
+        <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+      </article>
+      
+      <article>
+        <h2>Mozilla Firefox</h2>
+        <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+      </article>
+      
+      <article>
+        <h2>Microsoft Edge</h2>
+        <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+      </article>
+
+      <svg width="400" height="400" border=2px solid #000000;>
+        <circle cx="150" cy="150" r="70"
+        stroke="red" stroke-width="4" fill="orange" />
+      Sorry, your browser does not support inline SVG.
+      </svg>
+      
+      <svg width="400" height="180">
+        <rect x="50" y="20" rx="200" ry="20" width="150" height="150"
+        style="fill:red;stroke:black;stroke-width:5;opacity:0.5" />
+      </svg>
+      
+      <svg width="300" height="200">
+        <polygon points="100,10 40,198 190,78 10,78 160,198"
+        style="fill:lime;stroke:purple;stroke-width:5;fill-rule:nonzero;" />
+      </svg>
+
+        <figure>
+        <img src="https://tse3.mm.bing.net/th/id/OIP._zsO7PZwXdRS7EHaTKMdAQHaJ7?rs=1&pid=ImgDetMain" alt="PowPetrol" width="200px" height="200px">
+        <figcaption>Fig.1 - Pow Petrol Puppy</figcaption>
+        </figure>
+       
+        
+<!-- <div id="googleMap" style="width:100%;height:400px;"></div>
+
+<script>
+function myMap() {
+var mapProp= {
+  center:new google.maps.LatLng(51.508742,-0.120850),
+  zoom:5,
+};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script> -->
+
+<header>
+    <h1>My Website</h1>
+</header>
+
+<section>
+    <h2>About Us</h2>
+    <p>Welcome to our website! We provide amazing services and products to our customers.</p>
+</section>
+
+<section>
+    <h2>Our Services</h2>
+    <ul>
+        <li>Service 1</li>
+        <li>Service 2</li>
+        <li>Service 3</li>
+    </ul>
+</section>
+
+<footer>
+    &copy; 2022 My Website. All rights reserved.
+</footer>
+</body>
+</html>
